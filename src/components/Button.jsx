@@ -2,7 +2,7 @@ function Button({ title }) {
   return (
     <div>
       <a
-        class="group relative inline-flex items-center overflow-hidden rounded-full border border-current px-8 py-2 text-green-700 hover:bg-green-700 hover:text-white focus:outline-none focus:ring active:bg-green-900"
+        class="group relative inline-flex items-center overflow-hidden rounded-full border border-current px-4 lg:px-8 p-1 lg:py-2 text-green-700 hover:bg-green-700 hover:text-white focus:outline-none focus:ring active:bg-green-900"
         href="#"
       >
         <span class="absolute -start-full transition-all group-hover:start-4 hover:text-white">
@@ -22,7 +22,7 @@ function Button({ title }) {
           </svg>
         </span>
 
-        <span class="text-sm font-medium transition-all group-hover:ms-4 hover:text-white">
+        <span class="text-[10px] lg:text-sm font-medium transition-all lg:group-hover:ms-4 hover:text-white">
           {" "}
           {title}{" "}
         </span>

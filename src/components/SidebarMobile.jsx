@@ -1,17 +1,13 @@
-import { useState } from "react";
+import { useState } from "react"
 
-function Sidebar() {
-  const [showSidebar,setShowSidebar] = useState(false)
+function SidebarMobile({openSidebar}) {
+    const [showSidebar,setShowSidebar] = useState(false)
+    if(!openSidebar) return null
   return (
-    <div class={`hidden lg:flex w-[69px] overflow-hidden  bg-gray-100 ${showSidebar ? 'w-[350px]' :''}  duration-500 transition-all z-9`}>
+    <div class={`flex w-[53px] lg:hidden overflow-hidden  bg-gray-100 ${showSidebar ? 'w-[280px] ' :''} duration-1000 transition-all ease-in-out z-[22] absolute -top-[400px] h-0 ${openSidebar ? 'top-[76px] h-screen overflow-hidden': ''} -left-0  ` }>
       <div class="flex h-[100%] w-16 flex-col justify-between border-e border-gray-200 bg-gray-100">
         <div>
-          <div class="inline-flex size-16 items-center justify-center  ">
-            <span onClick={()=>setShowSidebar(!showSidebar)} class="grid size-13 place-content-center rounded-lg font-bold cursor-pointer hover:bg-gray-400 hover:text-gray-100 bg-white text-[30px] ">
-              Mb
-            </span>
-          </div>
-
+         
           <div class="border-t border-gray-200">
             <div class="px-2">
               <div onClick={()=>setShowSidebar(true)} class="py-4">
@@ -309,7 +305,7 @@ function Sidebar() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Sidebar;
+export default SidebarMobile

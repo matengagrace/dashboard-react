@@ -5,7 +5,7 @@ import Container from './components/Container'
 function App() {
 
   return (
-    <div className='w-full flex justify-between items-centerbg-white'>
+    <div className='w-full flex justify-between bg-white pr-3'>
       <Sidebar/>
       <Container/>
     </div>

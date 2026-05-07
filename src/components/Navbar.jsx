@@ -3,13 +3,15 @@ import { Bell, Mail, Search, CheckCheck } from "lucide-react";
 import User from "../assets/user-avatar.png";
 import User2 from "../assets/avatar.png";
 import Profil from "./Profil";
-  import {View, Eye} from "lucide-react";
+import {View, Eye,TextAlignJustify} from "lucide-react";
+import SidebarMobile from "./SidebarMobile";
 
 function Navbar() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
   const [openProfil, setOpenProfil] = useState(false);
   const [openNoti,setOpenNoti] =useState(false)
   const [openMsg,setOpenMsg] =useState(false)
+  const [openSidebar,setOpenSidebar] = useState(false)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,13 +22,19 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="w-full h-[70px] bg-gray-100 flex items-center rounded-lg px-2 mt-2">
-      <div className="flex items-center gap-5">
-        <div className="bg-white w-[120px] px-5 py-1 rounded-lg font-bold text-[17px]  rounded-box shadow">
-          <h1 className="border border-gray-300 rounded-lg p-1">{time}</h1>
+    <div className="w-full h-[70px] bg-gray-100 flex items-center rounded-lg px-2 mt-2 relative">
+      <SidebarMobile openSidebar={openSidebar}/>
+      <div className="flex items-center gap-2">
+        <div class="inline-flex size-16 items-center justify-center lg:hidden z-9">
+            <span onClick={()=>setOpenSidebar(!openSidebar)} class="grid size-13 place-content-center rounded-lg font-bold bg-white text-[30px] duration-1000 transition-all ">
+              Mb
+            </span>
+        </div>
+        <div className="bg-white w-[150px] px-5 hidden py-1 rounded-lg font-bold text-[17px] xs:flex items-center justify-center rounded-box shadow">
+          <h1 className="">{time}</h1>
         </div>
 
-        <div className="bg-white outline-0 px-4 py-1 rounded-lg flex items-center rounded-box shadow">
+        <div className="bg-white outline-0 px-4 py-1 rounded-lg lg:flex items-center rounded-box shadow hidden ">
           <Search />
           <input
             type="search"
@@ -37,7 +45,7 @@ function Navbar() {
       </div>
 
       <div className="ml-auto flex items-center gap-4">
-        <div className="bg-white p-1.5 rounded-full font-bold text-[18px]  relative rounded-box z-3">
+        <div className="bg-white p-1.5 rounded-full hidden lg:flex font-bold text-[18px]  relative rounded-box z-3">
           <Mail onClick={()=>setOpenMsg(!openMsg)} className="hover:text-blue-500 cursor-pointer" />
           <p className="bg-blue-500 px-2 rounded-full text-[14px] text-white absolute -top-2.5 left-[22px]">
                   2
@@ -127,7 +135,8 @@ function Navbar() {
           </div>
           )}
         </div>
-        <div onClick={()=> setOpenNoti(!openNoti)} className="bg-white p-1.5 rounded-full font-bold text-[18px]  rounded-box relative z-8">
+
+        <div onClick={()=> setOpenNoti(!openNoti)} className="bg-white p-1.5 rounded-full font-bold text-[18px] hidden lg:flex  rounded-box relative z-8">
           <Bell className="hover:text-rose-500 cursor-pointer" />
           <p className="bg-red-500 px-2 rounded-full text-[14px] text-white absolute -top-2 left-[22px]">
                   3
@@ -241,7 +250,7 @@ function Navbar() {
           )}
         </div>
 
-        <div className="flex items-center ">
+        <div className="hidden lg:flex items-center ">
           <div className="bg-white cursor-pointer rounded-full w-9 h-9 font-bold text-[18px] flex items-center justify-center  rounded-box">
             <img src={User} alt="User" className=" rounded-full" />
           </div>
@@ -256,7 +265,10 @@ function Navbar() {
             <Profil isOpen={openProfil} onClose={() => setOpenProfil(false)} />
           </div>
         </div>
+        <TextAlignJustify className="flex lg:hidden cursor-pointer"/>
       </div>
+      
+      
     </div>
   );
 }

@@ -6,7 +6,7 @@
     
     <div class=" grid grid-cols-2 lg:mt-0 lg:grid-cols-5 mb-3">
 
-        <ul class="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end">
+        <ul class="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end flex-wrap">
           <li>
             <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
               <span class="sr-only">Facebook</span>

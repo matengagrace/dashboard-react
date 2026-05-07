@@ -14,11 +14,11 @@ function Container() {
   const [edit, setEdit] = useState(false)
 
   return (
-    <div className="w-full h-screen bg-white mx-3">
+    <div className="w-full h-screen bg-white mx-2">
       <Navbar />
       <div className="w-full h-[calc(100vh-90px)] bg-gray-100 rounded-lg">
         <div className="w-full bg-gray-100 rounded-lg mt-2 p-2">
-        <div className="max-w-full flex items-center justify-between mb-3">
+        <div className="max-w-full flex flex-col lg:flex-row items-center justify-between mb-3">
           <div className="leading-1">
             <h1 className="text-xl font-bold">Dashboard</h1>
             <p className="text-gray-500 mt-2 text-sm"> This is your dashboard. </p>
