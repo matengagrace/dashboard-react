@@ -38,7 +38,7 @@ function Navbar() {
         <div className="bg-white p-1.5 rounded-full font-bold text-[18px] cursor-pointer relative rounded-box">
           <Mail className="hover:text-blue-500" />
           <p className="bg-blue-500 px-2 rounded-full text-[14px] text-white absolute -top-2 left-[22px]">
-                  2+
+                  2
                 </p>
         </div>
         <div onClick={()=> setOpenNoti(!openNoti)} className="bg-white p-1.5 rounded-full font-bold text-[18px]  rounded-box relative z-8">
