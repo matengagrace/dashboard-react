@@ -40,6 +40,9 @@ function Navbar() {
         </div>
         <div onClick={()=> setOpenNoti(!openNoti)} className="bg-white p-1.5 rounded-full font-bold text-[18px]  rounded-box relative z-8">
           <Bell className="hover:text-rose-500 cursor-pointer" />
+          <p className="bg-red-500 px-2 rounded-full text-[14px] text-white absolute -top-2 left-[22px]">
+                  3
+                </p>
 
           {openNoti && (
             <div className="w-[250px] h-[40vh]  bg-white shadow-lg rounded-lg overflow-hidden flex items-center justify-between p-2 flex-col  absolute top-15 -right-2 border border-gray-300">
