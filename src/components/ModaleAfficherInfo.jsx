@@ -1,4 +1,3 @@
-import User from "../assets/avatar.png";
 
 function ModaleAfficherInfo({ isOpen, onClose }) {
   if (!isOpen) return null;
