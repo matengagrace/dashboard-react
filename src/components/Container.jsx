@@ -23,7 +23,7 @@ function Container() {
             <h1 className="text-xl font-bold">Dashboard</h1>
             <p className="text-gray-500 mt-2 text-sm"> This is your dashboard. </p>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 py-4">
             <Button title="Add Product" />
             <Button title="Import Data" />
           </div>
