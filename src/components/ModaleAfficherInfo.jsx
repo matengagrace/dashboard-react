@@ -9,7 +9,7 @@ function ModaleAfficherInfo({ isOpen, onClose }) {
         aria-modal="true"
         aria-labelledby="modalTitle"
       >
-        <div class="w-[600px] rounded-lg  bg-white p-5 shadow-lg dark:bg-white flex flex-col justify-between relative">
+        <div class="lg:w-[600px] rounded-lg  bg-white p-5 shadow-lg dark:bg-white flex flex-col justify-between relative">
           <h2 id="modalTitle" class="border-b-1 border-gray-300 pb-2 text-xl text-center font-bold text-gray-700 sm:text-2xl">
             Information pour Nandor
           </h2>

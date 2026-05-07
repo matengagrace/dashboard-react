@@ -4,7 +4,7 @@ function ModaleEdit({isOpen,onClose}) {
   return (
     <div>
         <div class="fixed inset-0 z-50 grid place-content-center bg-black/50 p-4" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-  <div class="w-full lg:max-w-md rounded-lg bg-white p-6 shadow-lg">
+  <div class="lg:w-full lg:max-w-md rounded-lg bg-white lg:p-6 p-4 shadow-lg">
     <div class=" justify-between border-b-1 border-gray-300 flex items-center">
       <h2 id="modalTitle" class="text-xl font-bold text-gray-700 p-1 rounded-lg w-full  sm:text-2xl">Modifier l'Utilisateur</h2>
 
@@ -23,7 +23,7 @@ function ModaleEdit({isOpen,onClose}) {
         </span>
         <input type="text" id="Confirm" class="mt-0.5 w-full pl-2 h-[40px] text-gray-500 rounded border border-gray-400 outline-0 shadow-sm sm:text-sm"/>
       </label>
-      <label for="Confirm" class="mt-4 block w-[400px]">
+      <label for="Confirm" class="mt-4 block lg:w-[400px]">
         <span class="text-sm font-medium text-gray-700">
           Role
         </span>
@@ -35,7 +35,7 @@ function ModaleEdit({isOpen,onClose}) {
             <option value="Energy Vampire">Energy Vampire</option>
         </select>
       </label>
-      <label for="Confirm" class="mt-4 block w-[400px]">
+      <label for="Confirm" class="mt-4 block lg:w-[400px]">
         <span class="text-sm font-medium text-gray-700">
           Status
         </span>
@@ -45,7 +45,7 @@ function ModaleEdit({isOpen,onClose}) {
             <option value="Inactive">Inactive</option>
         </select>
       </label>
-      <label for="Confirm" class="mt-4 block w-[400px]">
+      <label for="Confirm" class="mt-4 block lg:w-[400px]">
         <span class="text-sm font-medium text-gray-700">
           DoB
         </span>
