@@ -1,16 +1,16 @@
 
 function Sidebar() {
   return (
-    <div class="flex w-[300px]">
-      <div class="flex h-screen w-16 flex-col justify-between border-e border-gray-100 bg-white">
+    <div class="flex w-[400px]  bg-gray-100">
+      <div class="flex h-[100%] w-16 flex-col justify-between border-e border-gray-200 bg-gray-100">
         <div>
           <div class="inline-flex size-16 items-center justify-center">
-            <span class="grid size-10 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600">
-              L
+            <span class="grid size-13 place-content-center rounded-lg font-bold bg-white text-[30px] ">
+              Mb
             </span>
           </div>
 
-          <div class="border-t border-gray-100">
+          <div class="border-t border-gray-200">
             <div class="px-2">
               <div class="py-4">
                 <a
@@ -43,11 +43,11 @@ function Sidebar() {
                 </a>
               </div>
 
-              <ul class="space-y-1 border-t border-gray-100 pt-4">
+              <ul class="space-y-1 border-t border-gray-200 pt-4 ">
                 <li>
                   <a
                     href="#"
-                    class="group relative flex justify-center rounded-sm px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                    class="group relative flex justify-center rounded-sm px-2 py-3 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ function Sidebar() {
                 <li>
                   <a
                     href="#"
-                    class="group relative flex justify-center rounded-sm px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                    class="group relative flex justify-center rounded-sm px-2 py-3 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ function Sidebar() {
                 <li>
                   <a
                     href="#"
-                    class="group relative flex justify-center rounded-sm px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                    class="group relative flex justify-center rounded-sm px-2 py-3 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,7 @@ function Sidebar() {
                 <li>
                   <a
                     href="#"
-                    class="group relative flex justify-center rounded-sm px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                    class="group relative flex justify-center rounded-sm px-2 py-3 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -152,10 +152,10 @@ function Sidebar() {
           </div>
         </div>
 
-        <div class="sticky inset-x-0 bottom-0 border-t border-gray-100 bg-white p-2">
+        <div class="sticky inset-x-0 bottom-0 border-t border-gray-200 bg-white p-2">
           <a
             href="#"
-            class="group relative flex w-full justify-center rounded-lg px-2 py-1.5 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+            class="group relative flex w-full justify-center rounded-lg px-2 py-3 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -179,22 +179,22 @@ function Sidebar() {
         </div>
       </div>
 
-      <div class="flex h-screen flex-1 flex-col justify-between border-e border-gray-100 bg-white">
+      <div class="flex h-[100%] flex-1 flex-col justify-between border-e border-gray-200 bg-gray-100">
         <div class="px-4 py-6">
           <ul class="mt-14 space-y-1">
             <li>
               <a
                 href="#"
-                class="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
+                class="block rounded-lg bg-gray-100 px-4 py-2 text-xm font-medium text-gray-700"
               >
                 General
               </a>
             </li>
 
             <li>
-              <details class="group [&amp;_summary::-webkit-details-marker]:hidden">
+              <details class="group [&amp;_summary::-webkit-details-marker]:hidden mt-6">
                 <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                  <span class="text-sm font-medium"> Teams </span>
+                  <span class="text-xm font-medium"> Teams </span>
 
                   <span class="shrink-0 transition duration-300 group-open:-rotate-180">
                     <svg
@@ -212,11 +212,11 @@ function Sidebar() {
                   </span>
                 </summary>
 
-                <ul class="mt-2 space-y-1 px-4">
+                <ul class="mt-2 space-y-3 px-4">
                   <li>
                     <a
                       href="#"
-                      class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                      class="block rounded-lg px-4 py-2 text-xm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                     >
                       Banned Users
                     </a>
@@ -225,7 +225,7 @@ function Sidebar() {
                   <li>
                     <a
                       href="#"
-                      class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                      class="block rounded-lg px-4 py-2 text-xm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                     >
                       Calendar
                     </a>
@@ -237,7 +237,7 @@ function Sidebar() {
             <li>
               <a
                 href="#"
-                class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                class="block rounded-lg px-4 py-3 text-xm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
               >
                 Billing
               </a>
@@ -246,7 +246,7 @@ function Sidebar() {
             <li>
               <a
                 href="#"
-                class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                class="block rounded-lg px-4 py-3 text-xm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
               >
                 Invoices
               </a>
@@ -255,7 +255,7 @@ function Sidebar() {
             <li>
               <details class="group [&amp;_summary::-webkit-details-marker]:hidden">
                 <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                  <span class="text-sm font-medium"> Account </span>
+                  <span class="text-xm font-medium"> Account </span>
 
                   <span class="shrink-0 transition duration-300 group-open:-rotate-180">
                     <svg
@@ -277,7 +277,7 @@ function Sidebar() {
                   <li>
                     <a
                       href="#"
-                      class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                      class="block rounded-lg px-4 py-3 text-xm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                     >
                       Details
                     </a>
